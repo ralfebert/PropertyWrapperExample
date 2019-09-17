@@ -5,6 +5,6 @@ import Foundation
 
 struct ExampleModel {
 
-    @Clamp(0 ... 10) var someValue = 5.0
+    var someValue = 5.0
 
 }
