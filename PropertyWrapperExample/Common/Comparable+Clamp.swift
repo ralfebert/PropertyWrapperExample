@@ -5,7 +5,11 @@ import Foundation
 
 extension Comparable {
 
-    func clamp(to range: ClosedRange<Self>) -> Self {
+    mutating func clamp(to range: ClosedRange<Self>) {
+        self = self.clamped(to: range)
+    }
+
+    func clamped(to range: ClosedRange<Self>) -> Self {
         return min(max(range.lowerBound, self), range.upperBound)
     }
 
