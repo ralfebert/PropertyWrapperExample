@@ -1,29 +1,26 @@
-// © 2019 Ralf Ebert — PropertyWrapperExample
+// © 2021 Ralf Ebert — PropertyWrapperExample
 // License: https://opensource.org/licenses/MIT
 
 @testable import PropertyWrapperExample
 import XCTest
 
 class PropertyWrapperExampleTests: XCTestCase {
-
     func testClampModelValue() {
-        var model = ExampleModel()
+        var model = ExampleModel(percentValue: 5.0)
 
-        model.someValue = 5.0
-        XCTAssertEqual(5.0, model.someValue)
+        model.percentValue = 5.0
+        XCTAssertEqual(5.0, model.percentValue)
 
-        model.someValue = 0.0
-        XCTAssertEqual(0.0, model.someValue)
+        model.percentValue = 0.0
+        XCTAssertEqual(0.0, model.percentValue)
 
-        model.someValue = 10.0
-        XCTAssertEqual(10.0, model.someValue)
+        model.percentValue = 10.0
+        XCTAssertEqual(10.0, model.percentValue)
 
-        model.someValue = -1.0
-        XCTAssertEqual(0.0, model.someValue)
+        model.percentValue = -1.0
+        XCTAssertEqual(0.0, model.percentValue)
 
-        model.someValue = 11.0
-        XCTAssertEqual(10.0, model.someValue)
-
+        model.percentValue = 101.0
+        XCTAssertEqual(100.0, model.percentValue)
     }
-
 }

@@ -1,0 +1,5 @@
+--header "© 2021 Ralf Ebert — PropertyWrapperExample\nLicense: https://opensource.org/licenses/MIT"
+--swiftversion 5.5
+--stripunusedargs unnamed-only
+--self insert
+--disable andOperator
