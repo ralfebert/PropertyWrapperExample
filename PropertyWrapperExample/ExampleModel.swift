@@ -4,5 +4,6 @@
 import Foundation
 
 struct ExampleModel {
-    var percentValue: Float
+    @Clamp(0 ... 100) var percentValue: Float = 0
+    @Clamp(0 ... 100) var intValue: Int = 0
 }

@@ -13,7 +13,7 @@
 		BFC796B3272B35F10005447D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC796B2272B35F10005447D /* Preview Assets.xcassets */; };
 		BFC796D6272B366C0005447D /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC796D5272B366C0005447D /* ExampleModel.swift */; };
 		BFC796D9272B36750005447D /* Clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC796D7272B36750005447D /* Clamp.swift */; };
-		BFC796DC272B36A90005447D /* PropertyWrapperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC796DB272B36A90005447D /* PropertyWrapperExampleTests.swift */; };
+		BFC796E0272B42A20005447D /* PropertyWrapperExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC796DF272B42A20005447D /* PropertyWrapperExampleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +35,7 @@
 		BFC796B8272B35F10005447D /* PropertyWrapperExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PropertyWrapperExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC796D5272B366C0005447D /* ExampleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		BFC796D7272B36750005447D /* Clamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clamp.swift; sourceTree = "<group>"; };
-		BFC796DB272B36A90005447D /* PropertyWrapperExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PropertyWrapperExampleTests.swift; path = ../../../../../../../Users/ralf/Desktop/PropertyWrapperExample/PropertyWrapperExampleTests/PropertyWrapperExampleTests.swift; sourceTree = "<group>"; };
+		BFC796DF272B42A20005447D /* PropertyWrapperExampleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyWrapperExampleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 		BFC796BB272B35F10005447D /* PropertyWrapperExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				BFC796DB272B36A90005447D /* PropertyWrapperExampleTests.swift */,
+				BFC796DF272B42A20005447D /* PropertyWrapperExampleTests.swift */,
 			);
 			path = PropertyWrapperExampleTests;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFC796DC272B36A90005447D /* PropertyWrapperExampleTests.swift in Sources */,
+				BFC796E0272B42A20005447D /* PropertyWrapperExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
