@@ -5,22 +5,16 @@ import Foundation
 
 @propertyWrapper
 struct Clamp<Value: Comparable> {
-    public init(wrappedValue value: Value, _ range: ClosedRange<Value>) {
-        self.value = value
+    public init(wrappedValue: Value, _ range: ClosedRange<Value>) {
         self.range = range
-        // value is set again via wrappedValue to enforce range on init
-        self.wrappedValue = value
+        self.wrappedValue = min(self.range.upperBound, max(self.range.lowerBound, wrappedValue))
     }
 
-    private var value: Value
     private var range: ClosedRange<Value>
 
     var wrappedValue: Value {
-        get {
-            self.value
-        }
-        set {
-            self.value = min(self.range.upperBound, max(self.range.lowerBound, newValue))
+        didSet {
+            self.wrappedValue = min(self.range.upperBound, max(self.range.lowerBound, wrappedValue))
         }
     }
 }
